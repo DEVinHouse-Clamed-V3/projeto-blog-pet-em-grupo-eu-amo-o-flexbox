@@ -1,0 +1,66 @@
+body {
+    background-color: #172c3c;
+}
+
+.home-container {
+    width: 30%;
+    background-color: white;
+    margin: 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-pic-container {
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e6b33d;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #e6b33d;
+    outline-color: #495f75;
+    padding: 5px;
+}
+
+.input-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+}
+
+a {
+    margin-top: 10px;
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
