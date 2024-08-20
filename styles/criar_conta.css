@@ -1,15 +1,22 @@
 body {
-    background-color: #172c3c;
+    background-color: #0c0b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .home-container {
-    width: 30%;
+    width: 100%;
     background-color: white;
     margin: 40px auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    overflow-y: auto; /* Permite rolar o conteúdo dentro do container  */
+    max-height: 91vh; /* Limita a altura máxima do container */
 }
 
 .profile-pic-container {
@@ -21,7 +28,7 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #e6b33d;
+    border: 2px solid #deb522;
 }
 
 .input-container {
@@ -41,8 +48,8 @@ body {
     height: 35px;
     border-radius: 10px;
     font-size: 18px;
-    border: 2px solid #e6b33d;
-    outline-color: #495f75;
+    border: 2px solid #deb522;
+    outline-color: #0c0b00;
     padding: 5px;
 }
 
@@ -63,4 +70,20 @@ a {
 .form-row {
     display: flex;
     justify-content: space-between;
+}
+
+.custom-btn {
+    background-color: #128bb5; 
+    border-color: #0c0b00; 
+    color: white; 
+}
+
+.custom-btn:hover {
+    background-color: #0f5f7a; 
+    border-color: #0c0b00; 
+    color: white; 
+}
+
+.custom-btn-voltar-login {
+    color: #128bb5;
 }
