@@ -1,6 +1,3 @@
-// Definir imagem de perfil padrão ao carregar a página
-document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
-
 function adicionarConta(event) {
     event.preventDefault();
 
@@ -114,6 +111,9 @@ function adicionarConta(event) {
         alert("Conta criada com sucesso!");
     }
 }
+
+// Definir imagem de perfil padrão ao carregar a página
+document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
 
 // Atualiza a imagem de perfil conforme o usuário digita a URL
 document.getElementById("foto").addEventListener("input", function () {
