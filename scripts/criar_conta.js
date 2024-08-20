@@ -1,3 +1,6 @@
+// Definir imagem de perfil padrão ao carregar a página
+document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
+
 function adicionarConta(event) {
     event.preventDefault();
 
@@ -104,20 +107,18 @@ function adicionarConta(event) {
 
         document.getElementById('form-conta').reset(); // Reseta o formulário
         
-       // window.location.href = '####.html'; //definir um local para onde vai o array com os dados
-
         // Limpa a imagem de perfil
         document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp"; // definir uma imagem padrão para quando atualizar a página
         document.getElementById("foto").value = ""; // Limpa o campo de URL da foto
+
+        alert("Conta criada com sucesso!");
     }
 }
 
-document.getElementById('form-conta').addEventListener('submit', adicionarConta); // Adiciona o evento de submissão
-
-// Atualiza a imagem de perfil
+// Atualiza a imagem de perfil conforme o usuário digita a URL
 document.getElementById("foto").addEventListener("input", function () {
     var url = this.value;
-    document.getElementById("profile-pic").src = url;
+    document.getElementById("profile-pic").src = url || "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
 });
 
 // Contador de caracteres para a biografia
@@ -128,3 +129,5 @@ bioTextarea.addEventListener("input", function () {
     const length = bioTextarea.value.length;
     charCount.textContent = `${length}/300 caracteres`;
 });
+
+document.getElementById('form-conta').addEventListener('submit', adicionarConta); // Adiciona o evento de submissão
