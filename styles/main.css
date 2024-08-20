@@ -1,107 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+  background-color: #e6f2ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
 h1 {
-    text-align: center;
-    color: #005f99;
+  text-align: center;
+  color: #005f99;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    color: #003366;
-    margin-bottom: 5px;
+  display: block;
+  color: #003366;
+  margin-bottom: 5px;
 }
 
 .form-group input, 
 .form-group textarea, 
 .form-group select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #b3d1ff;
-    border-radius: 5px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b3d1ff;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #005bb5;
+  background-color: #005bb5;
 }
 
 
 /* */
 
 .container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 90%;
-    max-width: 800px;
+  background-color: #e6f2ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 90%;
+  max-width: 800px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
-    border: 1px solid #b3d1ff;
+  border: 1px solid #b3d1ff;
 }
 
 th, td {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: #0073e6;
-    color: white;
+  background-color: #0073e6;
+  color: white;
 }
 
 button.delete-btn {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 button.delete-btn:hover {
-    background-color: #cc0000;
+  background-color: #cc0000;
 }
 
 
 /* CSS menu */
-
