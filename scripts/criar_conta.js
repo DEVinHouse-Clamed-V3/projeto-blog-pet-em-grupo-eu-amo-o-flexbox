@@ -9,12 +9,12 @@ function adicionarConta(event) {
     const confirmarSenha = document.getElementById('confirmarSenha').value;
     const biografia = document.getElementById('biografia').value;
 
-    // validações
+    // Validações
     let valid = true;
 
     if (foto === "") {
         document.getElementById('foto').style.borderColor = "red";
-        document.getElementById('error-foto').innerText = "Sua foto é obrigatória";
+        document.getElementById('error-foto').innerText = "*Sua foto é obrigatória*";
         valid = false;
     } else {
         document.getElementById('foto').style.borderColor = "";
@@ -23,7 +23,7 @@ function adicionarConta(event) {
 
     if (nome === "") {
         document.getElementById('nome').style.borderColor = "red";
-        document.getElementById('error-nome').innerText = "Nome é obrigatório";
+        document.getElementById('error-nome').innerText = "*Nome é obrigatório*";
         valid = false;
     } else {
         document.getElementById('nome').style.borderColor = "";
@@ -32,7 +32,7 @@ function adicionarConta(event) {
 
     if (email === "") {
         document.getElementById('email').style.borderColor = "red";
-        document.getElementById('error-email').innerText = "Email é obrigatório";
+        document.getElementById('error-email').innerText = "*Email é obrigatório*";
         valid = false;
     } else {
         document.getElementById('email').style.borderColor = "";
@@ -41,7 +41,7 @@ function adicionarConta(event) {
 
     if (dataNascimento === "") {
         document.getElementById('dataNascimento').style.borderColor = "red";
-        document.getElementById('error-dataNascimento').innerText = "Digite a sua data de nascimento";
+        document.getElementById('error-dataNascimento').innerText = "*Digite a sua data de nascimento*";
         valid = false;
     } else {
         document.getElementById('dataNascimento').style.borderColor = "";
@@ -50,7 +50,7 @@ function adicionarConta(event) {
 
     if (senha === "") {
         document.getElementById('senha').style.borderColor = "red";
-        document.getElementById('error-senha').innerText = "Esqueceu de digitar a senha";
+        document.getElementById('error-senha').innerText = "*Esqueceu de digitar a senha*";
         valid = false;
     } else if (senha.length < 8 || senha.length > 16) {
         document.getElementById('senha').style.borderColor = "red";
@@ -63,7 +63,7 @@ function adicionarConta(event) {
 
     if (confirmarSenha === "") {
         document.getElementById('confirmarSenha').style.borderColor = "red";
-        document.getElementById('error-confirmarSenha').innerText = "Não se esqueça de confirmar a senha";
+        document.getElementById('error-confirmarSenha').innerText = "*Não se esqueça de confirmar a senha*";
         valid = false;
     } else if (confirmarSenha !== senha) {
         document.getElementById('confirmarSenha').style.borderColor = "red";
@@ -76,7 +76,7 @@ function adicionarConta(event) {
 
     if (biografia === "") {
         document.getElementById('biografia').style.borderColor = "red";
-        document.getElementById('error-biografia').innerText = "Biografia é obrigatória";
+        document.getElementById('error-biografia').innerText = "*Biografia é obrigatória, faça uma breve descrição*";
         valid = false;
     } else {
         document.getElementById('biografia').style.borderColor = "";
@@ -104,20 +104,21 @@ function adicionarConta(event) {
 
         document.getElementById('form-conta').reset(); // Reseta o formulário
         
-       // window.location.href = '####.html'; //definir um local para onde vai o array com os dados
-
         // Limpa a imagem de perfil
-        document.getElementById("profile-pic").src = "default-profile.png"; // definir uma imagem padrão para quando atualizar a página
+        document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp"; // definir uma imagem padrão para quando atualizar a página
         document.getElementById("foto").value = ""; // Limpa o campo de URL da foto
+
+        alert("Conta criada com sucesso!");
     }
 }
 
-document.getElementById('form-conta').addEventListener('submit', adicionarConta); // Adiciona o evento de submissão
+// Definir imagem de perfil padrão ao carregar a página
+document.getElementById("profile-pic").src = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
 
-// Atualiza a imagem de perfil
+// Atualiza a imagem de perfil conforme o usuário digita a URL
 document.getElementById("foto").addEventListener("input", function () {
     var url = this.value;
-    document.getElementById("profile-pic").src = url;
+    document.getElementById("profile-pic").src = url || "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp";
 });
 
 // Contador de caracteres para a biografia
@@ -128,3 +129,5 @@ bioTextarea.addEventListener("input", function () {
     const length = bioTextarea.value.length;
     charCount.textContent = `${length}/300 caracteres`;
 });
+
+document.getElementById('form-conta').addEventListener('submit', adicionarConta); // Adiciona o evento de submissão
