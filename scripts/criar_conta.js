@@ -9,7 +9,7 @@ function adicionarConta(event) {
     const confirmarSenha = document.getElementById('confirmarSenha').value;
     const biografia = document.getElementById('biografia').value;
 
-    // Validações
+    // validações
     let valid = true;
 
     if (foto === "") {
