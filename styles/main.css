@@ -32,14 +32,22 @@ h1 {
   margin-bottom: 5px;
 }
 
-.form-group input, 
-.form-group textarea, 
+.form-group input,
+.form-group textarea,
 .form-group select {
   width: 100%;
   padding: 8px;
   border: 1px solid #b3d1ff;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+  padding: 8px;
+  border: 1px solid #b3d1ff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
 }
 
 button {
@@ -56,8 +64,7 @@ button:hover {
   background-color: #005bb5;
 }
 
-
-/* */
+/* Estilos adicionais */
 
 .container {
   background-color: #e6f2ff;
@@ -101,6 +108,3 @@ button.delete-btn {
 button.delete-btn:hover {
   background-color: #cc0000;
 }
-
-
-/* CSS menu */
