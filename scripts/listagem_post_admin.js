@@ -40,6 +40,7 @@ function loadMorePosts() {
   btnLoadMore.addEventListener('click', loadPosts);
 }
 
+/*
 // Seleciona o modal e o botão de fechar
 const modal = document.getElementById('modal');
 const closeBtn = document.querySelector('.close-btn');
@@ -81,6 +82,6 @@ window.addEventListener('click', function (event) {
 // Adiciona o evento de clique em cada card de filme
 document.querySelectorAll('.filme-card').forEach((card) => {
   card.addEventListener('click', abrirModal);
-});
+}); */
 
 document.addEventListener('DOMContentLoaded', loadPosts);
