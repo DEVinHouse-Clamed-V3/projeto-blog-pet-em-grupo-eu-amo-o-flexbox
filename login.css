@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(222,181,34);
+    background: radial-gradient(circle, rgba(222,181,34,1) 0%, rgba(12,11,0,1) 100%);
+    
+}
+
+.card {
+    width: 50%;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 34px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0px rgba (0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.campo {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #0c0b00;
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    color: #0c0b00;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: #128bb5;
+}
+
+.campo:focus {
+    border-color: #deb522;
+}
+
+.btn {
+    padding: 15px;
+    color: #0c0b00;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #128bb5;
+    cursor: pointer;
+    transition: all linear 190ms;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+    background-color: #deb522;
+}
+
+p {
+    font-size: 0.9em;
+    color: #0c0b00;
+}
+
+a {
+    font-size: 0.9em;
+    color: #128bb5;
+    text-decoration: none;
+}
+
+h2 {
+    color: aqua;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #0c0b00;
+
+}
