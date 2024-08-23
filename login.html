@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/projeto-blog-pet-em-grupo-eu-amo-o-flexbox/styles/login.css">
 </head>
+
 <body>
 
     <div class="form-login">
@@ -15,16 +16,20 @@
             <form>
                 <h2>Entre agora</h2>
                 <p>Digite seus dados abaixo.</p>
-                <input class="campo" type="email" placeholder="Digite o seu e-mail" />
-                <input class="campo" type="password" placeholder="Digite sua senha" />
-                <a href="#">Esqueci minha senha</a>
-                <input class ="btn" type="submit" value="Login" />
-                <p>Ainda não tem uma conta? <a href="#">Crie uma agora</a>.</p>
+                <input class="campo" type="email" placeholder="Digite o seu e-mail" required />
+                <input class="campo" type="password" placeholder="Digite sua senha" required />
+                <a href="/projeto-blog-pet-em-grupo-eu-amo-o-flexbox/index.html">Esqueci minha senha</a>
+                <input class="btn" type="submit" value="Login" />
+                <div class="checkbox-container">
+                    <input type="checkbox" id="manter-conectado" name="manter-conectado">
+                    <label for="manter-conectado">Mantenha-me conectado</label>
+                </div>
+                <p>Ainda não tem uma conta? <a href="/projeto-blog-pet-em-grupo-eu-amo-o-flexbox/criar_conta.html">Crie
+                        uma agora</a>.</p>
             </form>
-
         </div>
     </div>
-
+    <script src="/projeto-blog-pet-em-grupo-eu-amo-o-flexbox/scripts/login.js"></script>
 </body>
 
 </html>
