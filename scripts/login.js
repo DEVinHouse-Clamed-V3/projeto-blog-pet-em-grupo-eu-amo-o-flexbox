@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => { // Função só será exec
 
         if (user) {
             // Redireciona para a tela de post
+            alert('Seja bem-vindo!');
             window.location.href = '/projeto-blog-pet-em-grupo-eu-amo-o-flexbox/post.html';
         } else {
             // Mensagem de erro
