@@ -19,7 +19,7 @@ Deve ser desenvolvido algumas telas como de criar conta, listagem de posts, ver 
 - HTML5
 - CSS3
 - JavaScript
-- Boostrap
+- Bootstrap
 
 ## 📈 Status do projeto
 ✅ Concluído
