@@ -48,6 +48,9 @@ function loadPosts() {
             row.appendChild(actionCell);
 
             postsTableBody.appendChild(row);
+
+            //  direciona para o post com double click
+            row.ondblclick = () => window.location.href = `post.html?id=${post.id}`
         });
     }
 }

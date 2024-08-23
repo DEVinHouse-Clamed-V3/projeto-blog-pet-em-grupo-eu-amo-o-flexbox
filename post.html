@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Post</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/post.css">
 </head>
+
 <body>
-    
+    <nav class="nav">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png"
+            alt="imdb">
+        <a href="cadastro_post.html">Criar Post</a>
+        <a href="listagem_post_admin.html">Listagem</a>
+    </nav>
+
+    <span id="erro" class="item-erro"></span>
+
+
+    <div class="post-container" id="post-container">
+        <div class="div-img">
+            <img id="foto" src="" alt="">
+        </div>
+
+        <div class="div-text">
+            <h1><span id="titulo"></span></h1>
+            <p class="descricao"><span id="descricao"></span></p>
+
+            <div class="div-bottom">
+                <p><span id="data"></span></p>
+                <p><span id="categoria"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/post.js"></script>
 </body>
+
 </html>
+
+
+<!-- TESTE POST -->
+<!-- <div class="post-container" id="post-container">
+
+    <div class="div-img">
+        <img src="https://cdn.marvel.com/content/1x/theamazingspider-man_lob_crd_01.jpg" alt="">
+    </div>
+    <div class="div-text">
+        <h1>O Espetacular Homem-Aranha</h1>
+        <p class="descricao">Peter Parker se torna o Homem-Aranha e equilibra ser um super-herói, lutando contra o
+            vilão Lagarto, com o seu relacionamento em desenvolvimento com Gwen Stacy. </p>
+
+        <div class="div-bottom">
+            <p>Criado em: 21/08/2024</p>
+            <p>#HOMEMARANHA</p>
+        </div>
+
+    </div>
+
+</div> -->

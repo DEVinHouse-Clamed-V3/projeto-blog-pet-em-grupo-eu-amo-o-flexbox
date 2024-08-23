@@ -1,0 +1,148 @@
+:root {
+    --color-black: #070600;
+    --color-yellow: #f3cb04;
+    --color-white: #fcf7f7;
+    --color-blue: #128bb5;
+    --color-grey: #272727;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.nav {
+    background-color: var(--color-white);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nav img {
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.item-erro {
+    color: var(--color-white);
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto;
+    max-width: 350px;
+}
+
+.item-erro img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.post-container {
+    color: var(--color-white);
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 18px;
+    max-width: 50%;
+    margin: 40px auto;
+}
+
+.div-text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.descricao {
+    text-align: justify;
+}
+
+.div-bottom {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.div-img img {
+    border-radius: 14px;
+    margin: 10px;
+    height: 450px;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+    .post-container {
+        max-width: 90%;
+    }
+
+    .div-img {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-img img {
+        height: 95%;
+    }
+
+    .div-text {
+        text-align: center;
+    }
+
+    .descricao {
+        text-align: justify;
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 767px) {
+    .post-container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .div-img {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-img img {
+        height: 100%;
+    }
+
+    .div-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .descricao {
+        text-align: justify;
+    }
+
+}
