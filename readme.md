@@ -7,6 +7,9 @@
 ![image](https://github.com/user-attachments/assets/d15dcfec-e2a9-46e4-b0e9-e5187d8c58fd)
 
 ## 📷 Screenshot TELA DE VER POST e 404 - Lucas Pellin
+![image](https://github.com/user-attachments/assets/be816b85-6a4d-4b62-8a55-b94b7b8af0f1)
+![image](https://github.com/user-attachments/assets/ad283117-d748-41f8-b236-fccd2e57c2c1)
+
 
 ## 📋 Descrição do projeto
 Projeto dedicado à prática de todo o conteudo abordado até agora no DevInHouse, onde, precisa colocar em prática todo o conhecimento em FlexBox, Css, Javascript e bibliotecas como Bootstrap.
